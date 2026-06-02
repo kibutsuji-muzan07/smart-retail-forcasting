@@ -1,9 +1,13 @@
+anyio==4.13.0
 asgiref==3.11.1
 certifi==2026.5.20
 charset-normalizer==3.4.7
 Django==5.2.14
 djangorestframework==3.17.1
 greenlet==3.5.1
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
 idna==3.16
 numpy==2.4.6
 packaging==26.0
@@ -11,10 +15,12 @@ pandas==3.0.3
 psycopg2-binary==2.9.12
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.2
+PyYAML==6.0.3
 requests==2.34.2
 six==1.17.0
 SQLAlchemy==2.0.50
 sqlparse==0.5.5
+tenacity==9.1.4
 typing_extensions==4.15.0
 tzdata==2026.2
 urllib3==2.7.0
