@@ -1,0 +1,38 @@
+product_api:
+  base_url: "https://dummyjson.com"
+  endpoints:
+    products: "/products"
+  params: {}
+  headers: {}
+
+
+weather_api:
+  base_url: "https://api.weatherbit.io"
+  endpoints:
+    current: "/v2.0/current"
+  auth:
+    type: api_key
+    key_name: "key"
+  params:
+    city: "Bangalore"
+    postal_code: "560037"
+    country: "IN"
+  headers:
+    # The API key should be stored securely, for example in environment variables or a secrets manager, and not hardcoded in the configuration file. For demonstration purposes, it's shown here as a placeholder.
+  # start_date and end_date can be used for historical weather data if needed, but for current weather, they can be omitted or set to the current date.
+  sample_url: "https://api.weatherbit.io/v2.0/current?city=<city>&postal_code=<postal_code>&country=<country>&start_date=<start_date>&end_date=<end_date>&key=<api_key>"
+
+
+holiday_api:
+  base_url: "https://calendarific.com"
+  endpoints:
+    holidays: "/api/v2/holidays"
+  auth:
+    type: api_key
+    key_name: "api_key"
+  params:
+    country: "IN"
+    year: 2026
+  headers:
+    # The API key should be stored securely, for example in environment variables or a secrets manager, and not hardcoded in the configuration file. For demonstration purposes, it's shown here as a placeholder.
+  sample_url: "https://calendarific.com/api/v2/holidays?api_key=<api_key>&country=<country>&year=<year>"
